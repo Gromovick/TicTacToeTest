@@ -1,0 +1,17 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Font", sans-serif;
+}
+@font-face {
+  font-family: "Font";
+  src: url("/font/font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

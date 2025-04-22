@@ -1,0 +1,33 @@
+.page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: black; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 123, 255, 0.4) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 123, 255, 0.4) 1px, transparent 1px);
+  background-size: 100px 100px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.current {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+  padding-inline: 0;
+}
